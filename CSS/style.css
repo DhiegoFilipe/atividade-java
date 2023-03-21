@@ -1,0 +1,123 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 22px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+
+.mario-kart { 
+    position: absolute;
+    bottom: 0px;
+    width: 120px; 
+    animation: mario-kart 2.7s infinite linear;
+
+}
+
+.pipe { 
+    position: absolute;
+    bottom: -2px;
+    width: 80px;
+    animation: super 2s infinite linear;
+}
+
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+
+.nuvem {
+ width: 200px;
+ position: absolute;
+ animation: nuvem 10s infinite linear;
+}
+
+
+.sonic {
+    width: 14%;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+  }
+
+
+
+
+@keyframes nuvem {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes mario-kart {
+    from {
+       right: -80px;
+    }
+
+    to {
+       right: 100%;
+    }
+}
+
+@keyframes super{
+ from {
+   right: -80px;
+ }
+
+ to {
+   right: 100%;
+ }
+}
+
+@keyframes jump {
+
+0% {
+    bottom: 180px;
+}
+
+40% {
+    bottom: 180px;
+}
+
+50% {
+    bottom: 180px;
+}
+
+60% {
+    bottom: 180px
+    ;
+}
+
+100% {
+  bottom: 0px;
+}
+
+
+}
+
+.button {
+    width: 500px;
+    height: 25px;
+    display: inline-block;
+    padding: 1px 460px;
+
+
+    
+   
+    
+}
